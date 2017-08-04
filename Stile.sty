@@ -1,0 +1,92 @@
+%-------------------------
+%        PACCHETTI
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{listings}
+\usepackage[margin=3cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage[bf]{caption}
+\usepackage{float}
+
+
+\definecolor{link}{HTML}{62588A}
+\definecolor{url}{HTML}{0017d9}
+\hypersetup{%
+	colorlinks=true,%
+	linkcolor=link,%
+	urlcolor=url
+}
+
+%-------------------------
+% IMPOSTAZIONI PARAGRAPH
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\titleformat{\subparagraph}
+{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+\titlespacing*{\subparagraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+%-------------------------
+%      PRIMA PAGINA
+\renewcommand{\maketitle}{
+	\begingroup
+	\centering
+	%\includegraphics[scale=0.5]{}\\
+	\vspace{5cm}
+	{\Huge \TITOLO }\\
+	\rule{12cm}{0.4pt}\\
+	\vspace{1.5cm}
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{r|l}
+			\textbf{Componenti del gruppo} & \COMPONENTI \\ \\
+			\textbf{Referente} & \REFERENTE \\
+		\end{tabular}
+	\end{table}
+	\vspace{1cm}
+	\textbf{\centerline{Indirizzo web del sito:}}
+	\vspace{0.2cm}
+	\centerline{\url{MANCA URL}}
+	\vspace{1cm}
+
+	\textbf{\centerline{Login utente}}
+	\vspace{0.3cm}
+		\begin{tabular}{r|l}
+			\textbf{Username} & user \\ 
+			\textbf{Password} & user \\
+		\end{tabular}
+
+	\textbf{\centerline{Login amministratore}}	
+	\vspace{0.3cm}
+		\begin{tabular}{r|l}
+			\textbf{Username} & admin\\ 
+			\textbf{Password} & admin\\
+		\end{tabular}
+
+	\setcounter{page}{0}
+	\thispagestyle{empty}
+	\newpage
+	\clearpage
+	\setcounter{page}{1}
+	\endgroup
+}
+
+%-------------------------
+%         HEADER
+\rhead{\PROGETTO}
+
+%-------------------------
+%         FOOTER
+\pagestyle{fancy}
+\lfoot{\TITOLO}
+\rfoot{Pagina \thepage{} di \pageref*{LastPage}}
+\renewcommand{\footrulewidth}{0.4pt}
