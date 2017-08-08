@@ -33,20 +33,37 @@ Per rendere il più semplice possibile agli utenti la visione dei contenuti è s
 	Gli screenshot qui sotto sono una simulazione di come un utente appartenente a questa categoria vede il nostro sito.\\
 	\begin{figure}
 	\centering
-		\includegraphics[scale=1]{img/normale_mobile.jpeg}\\[1cm] \caption{Pagina mobile di login vista da un utente normale.}
+		\includegraphics[scale=0.4]{img/normale.png}\\[1cm] \caption{Pagina di login vista da un utente normale.}
 	\end{figure}
 	\begin{figure}
 	\centering
-		\includegraphics[scale=1]{img/deuteranopia_mobile.png}\\[1cm] \caption{Pagina mobile di login vista da un utente affetto da deuteranopia}
+		\includegraphics[scale=0.3]{img/deuteranopia.png}\\[1cm] \caption{Pagina di login vista da un utente affetto da deuteranopia}
 	\end{figure}
 	\begin{figure}
 	\centering
-		\includegraphics[scale=1]{img/protanopia_mobile.png}\\[1cm] \caption{Pagina mobile di login vista da un utente affetto da protanopia}
+		\includegraphics[scale=0.3]{img/protanopia.png}\\[1cm] \caption{Pagina di login vista da un utente affetto da protanopia}
 	\end{figure}
 	\begin{figure}
 	\centering
-		\includegraphics[scale=1]{img/tritanopia_mobile.png}\\[1cm] \caption{Pagina mobile di login vista da un utente affetto da tritanopia}
+		\includegraphics[scale=0.3]{img/tritanopia.png}\\[1cm] \caption{Pagina di login vista da un utente affetto da tritanopia}
 	\end{figure}
+		\begin{figure}
+	\centering
+		\includegraphics[scale=0.8]{img/normale_mobile.jpeg}\\[1cm] \caption{Pagina mobile di login vista da un utente normale.}
+	\end{figure}
+	\begin{figure}
+	\centering
+		\includegraphics[scale=0.8]{img/deuteranopia_mobile.png}\\[1cm] \caption{Pagina mobile di login vista da un utente affetto da deuteranopia}
+	\end{figure}
+	\begin{figure}
+	\centering
+		\includegraphics[scale=0.8]{img/protanopia_mobile.png}\\[1cm] \caption{Pagina mobile di login vista da un utente affetto da protanopia}
+	\end{figure}
+	\begin{figure}
+	\centering
+		\includegraphics[scale=0.8]{img/tritanopia_mobile.png}\\[1cm] \caption{Pagina mobile di login vista da un utente affetto da tritanopia}
+	\end{figure}
+	\newpage
 \subsection{Usabilità}
 Al fine di migliorare l'esperienza d'uso degli utenti sono state inserite le seguenti facilitazioni:
 \begin{itemize}
@@ -56,9 +73,10 @@ Al fine di migliorare l'esperienza d'uso degli utenti sono state inserite le seg
 \end{itemize}
 Inoltre per rendere ben navigabile il sito si è fatto uso di:
 \begin{itemize}
-	\item breadcrumb, il quale permette di capire in che pagina ci si trova;
-	\item mappa del sito;
+	\item \textbf{breadcrumb} che permette di capire in che pagina ci si trova;
+	\item \textbf{mappa del sito}.
 \end{itemize}
+
 \subsection{Comprensibilità}
 Le informazioni del sito devono risultare comprensibili per gli utenti. A tal scopo si è fatto utilizzo di:
 	\begin{itemize}
@@ -68,3 +86,9 @@ Le informazioni del sito devono risultare comprensibili per gli utenti. A tal sc
 		\item un gruppo di \textit{checkbox} al posto di \textit{<select multiple>}, in quanto risulta molto più comprensibile e di più facile utilizzo.
 	\end{itemize}
 \subsection{Robustezza}
+Il gruppo si è prefisso come scopo la più alta compatibilità possibile tra browser, rendendo il sito utilizzabile fino a Internet Explorer 8. Questo è stato reso possibile facendo utilizzo di regole CSS e funzioni JavaScript compatibili
+con quest'ultimo. \\
+Inoltre il sito è stato testato in diversi altri browser (Google Chrome 59.0, Mozilla Firefox 53.0 e Microsoft Edge), dove l'aspetto e le funzionalità rimangono pressoché inalterate.
+
+\subsection{Screen Reader}
+Per testare la compatibilità del sito con uno Screen Reader, è stato scelto di usare il programma gratuito NVDA. Alcuni membri del gruppo hanno utilizzato tale programma per navigare all’interno del sito, sia nell’area utente sia nell’area di amministrazione, senza riscontrare particolari problemi. Il sito risulta quindi utilizzabile anche da parte di una persona che non può usare un browser canonico, ma deve fare affidamento ad uno screen reader.
