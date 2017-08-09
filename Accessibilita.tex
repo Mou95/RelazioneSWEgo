@@ -23,13 +23,13 @@ La percepibilità consiste in:
 	\begin{itemize}
 		\item attributo \textit{alt} con un appropriato testo sostitutivo a tutte le immagini;
 		\item non sono state utilizzate immagini per riportare il testo, rendendo il contenuto informativo accessibile anche agli utenti che utilizzano gli screen reader;
-		\item attributo \textit{scope= "col"} per specificare la cella header di una colonna, o gruppo di colonne in una tabella(sempre rivolto agli utenti che utilizzano gli screen reader);
+		\item attributo \textit{scope= "col"} per specificare la cella header di una colonna, o gruppo di colonne in una tabella;
 		\item un tag \textit{label} che descrive la finalità di ogni textfield di ogni form;
 		\item un tag \textit{legend} per tutti i fieldset, utile a descriverne il contenuto.
 	\end{itemize}
 \subsubsection{Colori}
 Per rendere il più semplice possibile agli utenti la visione dei contenuti è stato adottato un appropriato schema di colori, il quale garantisce un certo contrasto cromatico.
-	In particolare, miriamo a dare meno disagi possibili agli utenti affetti da particolari patologie agli occhi, quali deuteranopia, protanopia e tritanopia. \\
+	In particolare, miriamo a dare meno disagi possibili agli utenti affetti da particolari patologie alla vista, quali deuteranopia, protanopia e tritanopia. \\
 	Gli screenshot qui sotto sono una simulazione di come un utente appartenente a questa categoria vede il nostro sito.\\
 	\begin{figure}
 	\centering
@@ -69,7 +69,6 @@ Al fine di migliorare l'esperienza d'uso degli utenti sono state inserite le seg
 \begin{itemize}
 	\item \textbf{tabindex}: non è stato ridefinito il comportamento del pulsante tab tramite l'attributo tabindex, in quanto il gruppo ritiene quello di default agevole per la navigazione;
 	\item \textbf{link per spostarsi al contenuto}: prima della barra di navigazione è stato inserito un link nascosto per saltarla, permettendo agli utenti che utilizzano uno screen reader di passare direttamente al contenuto;
-	\item 
 \end{itemize}
 Inoltre per rendere ben navigabile il sito si è fatto uso di:
 \begin{itemize}
@@ -81,9 +80,9 @@ Inoltre per rendere ben navigabile il sito si è fatto uso di:
 Le informazioni del sito devono risultare comprensibili per gli utenti. A tal scopo si è fatto utilizzo di:
 	\begin{itemize}
 		\item \textit{xml:lang=en} per specificare che alcune parole sono inglesi;
-		\item menù quasi uguali per tutte le pagine, rendendo la voce di menù della pagina attuale non cliccabile;
+		\item menù simili per tutte le pagine, rendendo la voce di menù della pagina attuale non cliccabile;
 		\item apposite label e istruzioni che aiutano l'utente a inserire dati corretti;
-		\item un gruppo di \textit{checkbox} al posto di \textit{<select multiple>}, in quanto risulta molto più comprensibile e di più facile utilizzo.
+		\item un gruppo di \textit{checkbox} al posto di \textit{select multiple}, in quanto risulta molto più comprensibile e di più facile utilizzo.
 	\end{itemize}
 \subsection{Robustezza}
 Il gruppo si è prefisso come scopo la più alta compatibilità possibile tra browser, rendendo il sito utilizzabile fino a Internet Explorer 8. Questo è stato reso possibile facendo utilizzo di regole CSS e funzioni JavaScript compatibili
